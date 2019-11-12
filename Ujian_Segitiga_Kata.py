@@ -1,19 +1,21 @@
 a = input("Input: ")
+d = a.split(" ")
+e = "".join(d)
 
-if len(a) == 3:
+if len(e) == 3:
 	b = 2
-elif len(a) == 6:
+elif len(e) == 6:
 	b = 3
-elif len(a) == 10:
+elif len(e) == 10:
 	b = 4
-elif len(a) == 15:
+elif len(e) == 15:
 	b = 5
-elif len(a) == 21:
+elif len(e) == 21:
 	b = 6
-elif len(a) == 28:
+elif len(e) == 28:
 	b = 7
-elif len(a) == 36:
-	b == 8
+elif len(e) == 36:
+	b = 8
 else:
 	b = 0
 
@@ -28,7 +30,7 @@ if b != 0:
 	for i in range(1, b + 1):
 		counter += 1
 		stop += i
-		x = list(a[start:stop])
+		x = list(e[start:stop])
 		for h in x:
 			print(h + ' ', end = '')
 		print('')
@@ -39,7 +41,7 @@ if b != 0:
 	start = 0
 	
 	for i in range(0, b + 1):
-		x = list(a[start:start+counter])
+		x = list(e[start:start+counter])
 		for h in x :
 			print(h + ' ', end = '')
 		print('')
